@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 배경화면 비율 조절 */
+        .center-cover-img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; 
+        }
+
+        section, div {
+            /* border: 1px solid red; */
+        } 
+        
+        .main{
+            height: 800px;
+            background-image: url("./tossimg/new_main.png");
+        }
+
+        .container{
+             max-width: 1024px;
+            height: 100%;
+            margin: auto;
+        }
+
+        .logo-nav{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+
+        .nav{
+            display: flex; 
+            column-gap: 70px;
+        }
+
+        /* nav 안에있는 ul */
+        .nav ul {
+            /* ul에 점 없애기 */
+            list-style-type: none;
+            display: flex;
+            column-gap: 30px;
+            font-size: 14px;
+            color: rgb(78, 77, 77);
+            font-weight: 600px;
+        }
+
+        .info{
+            margin-top: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 중앙 글자 굵기, 크기 */
+        .info-msg{
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        /* 버튼과 중앙 글자사이 간격 */
+        .button-group{
+            margin-top: 60px;
+        }
+
+        /* 버튼 디자인 */
+        .app-button{
+            background-color: rgba(0, 0, 0, 0.75);
+            color: white;
+            width: 150px;
+            height: 40px;
+            border-style: none;
+            border-radius: 6px;
+        }
+
+        /* 버튼속 내용 디자인 및 비율조절 */
+        .app-button div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 100;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <section class="main center-cover-img">
+        <div class="container">
+            <div class="logo-nav">
+                <img class="logo" src="./tossimg/toss-logo.png" height="25" alt=" 로고">
+                <div class="nav">
+                    <ul>
+                        <li>회사소개</li>
+                        <li>고객센터</li>
+                        <li>자주 묻는 질문</li>
+                        <li>토스 인증서</li>
+                        <li>채용</li>
+                    </ul>
+                    <ul>
+                        <li>KOR</li>
+                        <li>|</li>
+                        <li>ENG</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="info">
+                    <div class="info-msg">금융의 모든 것</div>
+                    <div class="info-msg">토스에서 쉽고 간편하게</div>
+                    <div class="button-group">
+                        <button class="app-button">
+                            <div>
+                                <img src="./tossimg/applekorea.png" height="25" alt="">
+                                <span>App Store</span>
+                            </div>
+                        </button>
+                        <button class="app-button">
+                            <div>
+                                <img src="./tossimg/googleplay.png" height="25" alt="">
+                                <span>Google Play</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
